@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackHub Sign Up</title>
+    <link rel="stylesheet" href="fontawesome-free-7.1.0-web/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    :root{
+        --primary: #8295bfb6;
+        --white: #fff;
+        --gray-200: #e5e7eb;
+        --bg-card: rgba(255, 255, 255, 0.85);
+        --border-radius-sm: 8px;
+         --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    /* sign-up-form */
+    .body_container {
+        background-color: var(--primary);
+        height: 100vh;
+    }
+
+    .sign-up-form {
+        text-align: center;
+        margin: 0 450px;
+        padding: 50px 20px;
+        width: 500px;
+        height: 600px;
+        background-color: var(--white);
+        border: 2px solid rgba(109, 106, 106, 0.471);
+        box-shadow: 2px solid black;
+        border-radius: 20px;
+    }
+
+    .sign-up-form input {
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        text-decoration: none;
+    }
+    .user-icon{
+        position: absolute;
+        top: 18px;
+        left: 18px;
+    }
+    .username_input input{
+        text-indent: 30px;
+    }
+    .form-select {
+    background: var(--bg-card);
+    border: 2px solid var(--gray-200);
+    border-radius: var(--border-radius-sm);
+    padding: 14px 16px;
+    font-weight: 500;
+    transition: var(--transition);
+    color: var(--text-primary);
+}
+.login_input{
+    border: 2px solid rgba(171, 166, 166, 0.624);
+}
+</style>
+<body>
+    <div class="body_container p-5 animate-on-scroll aos-fade-left second">
+        <div class="back_button position-relative">
+            <a href="train_vista.html"><i class="fas fa-arrow-left fs-2 text-dark fw-bold"></i></a>
+        </div>
+        <div class="sign-up-form text-center">
+           <h4 class="ms-3 mb-5 fw-bolder">Sign <span class="text-primary">Up</span>.</h4>
+           <div class="username_input position-relative">
+               <i class="fas fa-user user-icon position-absolute"></i>
+               <input type="text" placeholder="Enter username" class="mb-3 login_input">
+           </div>
+           <div class="username_input position-relative">
+               <i class="fas fa-user user-icon position-absolute"></i>
+               <input type="text" placeholder="Enter Email" class="mb-3 login_input">
+           </div>
+           <div class="username_input position-relative">
+               <i class="fas fa-phone user-icon position-absolute "></i>
+               <input type="text" placeholder="Enter Phone Number" class="mb-3 login_input">
+           </div>
+           <div class="username_input position-relative">
+               <i class="fas fa-eye user-icon position-absolute"></i>
+               <input type="password" placeholder="Enter Password" class="mb-3 login_input">
+           </div>
+        <div class="w-100">
+            <select class="form-select" id="travelClass">
+                <option value="all">Male</option>
+                <option value="Economy">Female</option>
+                <option value="Business">Others</option>
+            </select>
+        </div>
+           <button class="btn btn-primary w-100 mt-4 mb-3">Create Account</button>
+           <p class="fw-bold">Already have an account? <a href="login-form.html">Login</a></p>
+        </div>
+    </div>
+    <script src="fontawesome-free-7.1.0-web/js/all.min.js"></script>
+    <script src="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

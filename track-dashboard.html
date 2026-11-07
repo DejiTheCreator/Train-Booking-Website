@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackHub Dashboard</title>
+    <link rel="stylesheet" href="fontawesome-free-7.1.0-web/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --black: #000000e8;
+        --primary-light: #e1effe;
+        --primary-blue: #2564ebde;
+        --primary-blue-light: #3B82F6;
+        --primary-blue-dark: #1D4ED8;
+        --text-color: #222;
+        --text-white: #ffffff;
+        --sucess-green: #10B981;
+        --sky-blue: #38BDF8;
+        --cyan: #06B6D4;
+        --teal: #16b7a4;
+        --transition: all 0.3s ease;
+        --border-1: 2px solid rgba(38, 33, 184, 0.298);
+        --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        --bg-body: #5a70a2dc;
+    }
+
+    body {
+        background: #2b4174 !important;
+    }
+
+    .sidebar_nav {
+        width: 300px;
+        height: 100vh;
+        background: var(--primary-blue);
+        color: rgba(255, 255, 255, 0.821);
+        border-right: 1px solid rgba(255, 255, 255, 0.565);
+    }
+
+    .sidebar-list li {
+        font-weight: 600;
+        width: 100%;
+        margin-right: 50px;
+        padding: 12px;
+    }
+
+    .sidebar-list li:hover {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.209);
+        border: 1px solid rgba(255, 255, 255, 0.398);
+        padding: 13px;
+        border-radius: 15px;
+    }
+
+    .sidebar-list li a {
+        list-style: none;
+        color: #e1effe;
+        text-decoration: none;
+
+    }
+    /* .sidebar-list li  */
+    ul li {
+        list-style: none;
+        margin-top: 30px;
+        margin-right: 50px;
+    }
+    .user-container:hover{
+        border: 1px solid rgba(196, 11, 11, 0.544);
+    }
+    .sidebar-footer{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .user-profile-min{
+    
+    }
+    .user-avatar{
+       margin-left: auto;
+       margin-right: auto;
+        width: 50px;
+        padding: 5px;
+        border-radius: 50%;
+        color: #1D4ED8;
+        font-size: 30px;
+        font-weight: bolder;
+        background-color: white;
+    }
+    
+</style>
+
+<body>
+    <div class="b-container d-flex ">
+        <div class="sidebar_nav p-3">
+            <div class="sidebar-brand d-flex align-items-center justify-content-between">
+                <h4 class="text-light fw-bold fs-3"><i class="fas fa-train text-black fs-3 fw-bold mt-2"></i>Track<span
+                        class="text-black">Hub</span></h4>
+            </div>
+            <div class="sidebar-list">
+                <ul class="m-0 w-100">
+                    <li><a href="#"><i class="fa fa-home me-3"></i>Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-gauge-high  me-3"></i>Speed</a></li>
+                    <li><a href="#"><i class="fas fa-route  me-3"></i>Routes</a></li>
+                    <li><a href="#"><i class="fas fa-clipboard-check  me-3"></i>Alarms</a></li>
+                    <li><a href="#"><i class="fas fa-gear  me-3"></i>Settings</a></li>
+                    <li><a href="#"><i class="fas fa-right-from-bracket  me-3"></i>log Out</a></li>
+
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <div class="user-profile-mini">
+                    <div class="user-avatar" id="userAvatar">A</div>
+                    <div>
+                        <div class="fw-bold small" id="userName">Akorede Hammed</div>
+                        <div class="text-muted" style="font-size: 0.75rem;" id="userEmail">isholahammed@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second p-2 w-100 p-4 mt-4">
+            <div class="user-container p-3  w-100 h-25 bg-primary-subtle rounded-3">
+                <h3>Hi .........</h3>
+            </div>
+        </div>
+    </div>
+    <script src="fontawesome-free-7.1.0-web/js/all.min.js"></script>
+    <script src="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
